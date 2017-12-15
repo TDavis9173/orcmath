@@ -118,7 +118,7 @@ public class Sampler extends GUIApplication {
 					
 				}
 			}); 
-			viewObjects.add(new FeelsDabMan());
+			viewObjects.add(new Countries());
 			
 		}
 		
