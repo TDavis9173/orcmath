@@ -18,6 +18,7 @@ public class SimonGameTheo extends GUIApplication {
 
 	public static void main(String[] args) {
 		SimonGameTheo test = new SimonGameTheo(600,800);
+		test.initScreen();
 		Thread t = new Thread(test);
 		t.start();
 
