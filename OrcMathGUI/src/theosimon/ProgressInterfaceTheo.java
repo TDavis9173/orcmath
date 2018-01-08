@@ -4,8 +4,8 @@ import guiTeacher.interfaces.Visible;
 
 public interface ProgressInterfaceTheo extends Visible{
 
-	static void gameOver() {
-		// TODO Auto-generated method stub
+	static void gameOver()
+	{	
 		
 	}
 }
