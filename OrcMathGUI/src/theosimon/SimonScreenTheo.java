@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 
+import guiTeacher.components.Action;
 import guiTeacher.components.Button;
 import guiTeacher.components.TextArea;
 import guiTeacher.components.TextLabel;
@@ -27,10 +28,26 @@ public class SimonScreenTheo extends ClickableScreen implements Runnable{
 
 	@Override
 	public void initAllObjects(List<Visible> viewObjects) {
-		ButtonInterfaceTheo b1 = getAButton();
+		final ButtonInterfaceTheo b1 = getAButton();
 		b1.setColor(Color.BLUE);
-		//b1.setX(x);put for all
-		//b1.setY(y);
+		b1.setX(0);
+		b1.setY(0);
+		b1.setAction(new Action(){
+
+			public void act(){
+				if(isUserTurn) {
+					Thread blink = new Thread(new Runnable(){
+
+						public void run(){
+						}
+
+						});
+					
+				}
+			}
+
+			});
+
 		viewObjects.add(b1); 
 		ButtonInterfaceTheo b2 = getAButton();
 		b2.setColor(Color.RED);
