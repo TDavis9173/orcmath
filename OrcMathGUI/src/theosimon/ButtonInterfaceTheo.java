@@ -11,4 +11,6 @@ public interface ButtonInterfaceTheo extends Clickable{
 	void setX(int x);
 	void setY(int y);
 	void setAction(Action a);
+	void highlight();
+	void dim();
 }
