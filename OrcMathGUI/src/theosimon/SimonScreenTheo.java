@@ -168,7 +168,8 @@ public class SimonScreenTheo extends ClickableScreen implements Runnable{
 		
 	}
 	public void gameOver() {
-		// TODO Auto-generated method stub
+		text.setText("Game over");
+		isUserTurn=false;
 		
 	}
 	public void blink(int b) {
